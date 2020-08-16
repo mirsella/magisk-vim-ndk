@@ -1,0 +1,14 @@
+#!/sbin/sh
+# Diffusion Installer Backend (DO NOT CHANGE)
+# osm0sis @ xda-developers
+
+# avoid forced Magisk update-binary replacement breakage
+# see customize.sh for what was previously update-binary
+
+mkdir -p /dev/tmp;
+cd /dev/tmp;
+
+unzip -o "$3" customize.sh;
+
+. /dev/tmp/customize.sh;
+
