@@ -1,11 +1,12 @@
 # vim for Android NDK
-just vim version of osm0sis's nano-ndk modules, so all merit go to him, go check his profile
+just vim version of osm0sis's nano-ndk modules, so all merits go to him, go check his profile
 ### [osm0sis nano-ndk](https://github.com/Magisk-Modules-Repo/nano-ndk)
 the vim binary i used is from Zackptg5 : [Cross-Compiled-Binaries-Android](https://github.com/Zackptg5/Cross-Compiled-Binaries-Android)
 
-to transform nano-ndk to vim-ndk i just used 2 magic steps :<br>
-`fd -t d -x sed -i 's/nano/vim' {}`<br>
-and i downloaded the binary from zackptg5's repo.<br>
+to transform nano-ndk to vim-ndk i just used 3 magic steps :<br>
+`fd -t f -x sed -i 's/nano/vim' {}`<br>
+renamed file nano --> vim<br>
+and replaced the nano binary with vim<br>
 easy peasy with linux :)
 
 ### Description
