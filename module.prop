@@ -1,9 +1,8 @@
 id=vim-ndk
-name=vim for Android NDK
-version=v8.2.0356
-versionCode=820356
-author=mirsella, credits to osm0sis @ xda-developers
-description=Static ARM vim binary for Android build with the NDK
-support=https://forum.xda-developers.com/showthread.php?t=2239421
+name=Vim for Android NDK
+version=8.2.1673
+versionCode=821673
+author=osm0sis @ xda-developers, adapted by mirsella@github
+description=Static ARM vim binary for Android built with the NDK
 donate=https://forum.xda-developers.com/donatetome.php?u=4544860
 template=1500

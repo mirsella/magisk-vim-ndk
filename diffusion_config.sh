@@ -1,7 +1,7 @@
 # Diffusion Installer Config
 # osm0sis @ xda-developers
 
-INST_NAME="vim Installer Script";
+INST_NAME="Vim Installer Script";
 AUTH_NAME="osm0sis @ xda-developers";
 
 USE_ARCH=false
