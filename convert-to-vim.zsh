@@ -16,5 +16,5 @@ git add -A
 git commit -m "migrated to vim $vimversion"
 git push -f origin master
 zip magisk-vim-ndk.zip $(fd -t f)
-gh release create "$vimversion" magisk-vim-ndk.zip -t "vim $vimversion automatic release ⚠️"
+gh release create "$vimversion" magisk-vim-ndk.zip -t "vim $vimversion (automatic release ⚠️)"
 rm magisk-vim-ndk.zip
