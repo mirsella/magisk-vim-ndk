@@ -1,5 +1,5 @@
 #!/sbin/sh
-# nano: set up and run nano from recovery/terminal
+# vim: set up and run vim from recovery/terminal
 # osm0sis @ xda-developers
 
 (mount /data;
@@ -28,13 +28,13 @@ if [ "$suimg" ]; then
       losetup -d $loop 2>/dev/null;
     fi;
   fi;
-  [ $mnt == /magisk ] && magisk=/nano-ndk/system;
+  [ $mnt == /magisk ] && magisk=/vim-ndk/system;
   etc=$mnt$magisk/etc;
   bin=$mnt$magisk/bin;
 else
   mnt=$(dirname `find /data -name supersu_is_here | head -n1`);
-  [ -e /data/adb/modules ] && mnt=/data/adb/modules/nano-ndk/system;
-  [ -e /data/adb/modules_update ] && mnt=/data/adb/modules_update/nano-ndk/system;
+  [ -e /data/adb/modules ] && mnt=/data/adb/modules/vim-ndk/system;
+  [ -e /data/adb/modules_update ] && mnt=/data/adb/modules_update/vim-ndk/system;
   if [ -e "$mnt" ]; then
     etc=$mnt/etc;
     bin=$mnt/bin;
@@ -54,5 +54,5 @@ else
 fi;
 
 clear;
-TERMINFO=$etc/terminfo TERM=$term $bin/nano.bin "$@";
+TERMINFO=$etc/terminfo TERM=$term $bin/vim.bin "$@";
 
