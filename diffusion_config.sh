@@ -1,7 +1,7 @@
 # Diffusion Installer Config
 # osm0sis @ xda-developers
 
-INST_NAME="Nano Installer Script";
+INST_NAME="vim Installer Script";
 AUTH_NAME="osm0sis @ xda-developers";
 
 USE_ARCH=false
@@ -21,13 +21,13 @@ custom_target() {
 
 custom_install() {
   ui_print " ";
-  ui_print "Installing nano to $BIN ...";
+  ui_print "Installing vim to $BIN ...";
   ui_print "Installing terminfo to $ETC ...";
-  set_perm 0 0 755 $BIN/nano $BIN/nano.bin;
+  set_perm 0 0 755 $BIN/vim $BIN/vim.bin;
   if ! $BOOTMODE; then
-    ui_print "Installing nano recovery script to /sbin ...";
+    ui_print "Installing vim recovery script to /sbin ...";
     cp -rf sbin/* /sbin;
-    set_perm 0 0 755 /sbin/nano;
+    set_perm 0 0 755 /sbin/vim;
   fi;
 }
 
@@ -50,7 +50,7 @@ custom_cleanup() {
 custom_exitmsg() {
   if ! $BOOTMODE && [ "$ACTION" == installation ]; then
     ui_print " ";
-    ui_print "nano may now be run temporarily from";
+    ui_print "vim may now be run temporarily from";
     ui_print "terminal/adb shell for this recovery session,";
     ui_print "and from now on in booted Android.";
   fi;
