@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# nano: wrapper to set up and run nano from terminal
+# vim: wrapper to set up and run vim from terminal
 # osm0sis @ xda-developers
 
 dir="$(cd "$(dirname "$0")"; pwd)";
@@ -13,5 +13,5 @@ fi;
 
 clear;
 resize >/dev/null 2>&1;
-TERMINFO=$dir/../etc/terminfo TERM=$term $dir/nano.bin "$@";
+TERMINFO=$dir/../etc/terminfo TERM=$term $dir/vim.bin "$@";
 
